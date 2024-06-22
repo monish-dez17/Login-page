@@ -8,27 +8,37 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="wrapper">
-        <form action="https://api.web3forms.com/submit" method="POST">
-           <h1> Your Login Page</h1>
-             <input type="hidden" name="access_key" value="5e89ae33-2978-43fb-b269-80977bd6bec8">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-            <h4> Created by Monish Das</h4>
+    <div class="wrapper">
+        <input type="hidden" name="access_key" value="5e89ae33-2978-43fb-b269-80977bd6bec8">
+    
+            <input type="hidden" name="redirect" value="contact-thankyou-page">
+    
+            <input type="hidden" name="subject" value="Hey Monish New feedback for your website">
+    
+           <h1> Your Login Page</h1>
+           <h4>Created by Monish Das</h4> 
            <div class="input-box">
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text"  name="name" placeholder="Enter your name" required>
             <i class='bx bxs-user' ></i>
         </div>
-              <div class="input-box">
-                <input type="password" placeholder="Enter your password" required>
-                <i class='bx bxs-lock-alt'></i>
+              
+            <div class="input-box">
+                <input type="email"  name="email" placeholder="Enter your email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="message" placeholder="Message" required>
+                <i class='bx bxs-message-rounded-dots' ></i>
             </div>
             <div class="remember-forget">
                 <label for="f"><input type="checkbox" id="f">Remember me?</label>
-                <a href="#">Forget Password?</a>
+                <a  target = "_blank " href="https://accounts.google.com/v3/signin/challenge/dp?TL=AC3PFD5ia-LqVliMLCITXZz-FK9qp8m0YDZ2OlDlKX3Ad4JZExX_FM-I-HU0psgv&cid=2&continue=https://myaccount.google.com/signinoptions/password&flowName=GlifWebSignIn&hl=en_US&ifkv=AS5LTAQUNXvYrgf52fF9OEcF6Wp6YYJORJYU-ghcYaz-YBZQAvYUUct7eP9Un_nYL4o_H_8SCwfaSQ&kdi=CAM&rart=ANgoxce5vCxbYL5LSGpKkDaEqg7GNSfdSqipl6KAoVjl6v83nkWzlTwnrceZfoXTY2yz99rB063iXGGCse0Q2rJO4480Y_G58cKx-7Ne55ESDYUyDrY1tL0&rpbg=1&sarp=1&scc=1&service=accountsettings">Forget Password?</a>
             </div>
             <button type="submit" class="btn">Login</button>
             <div class="register-link">
-                <p>Don't have account?<a href="#">Register</a></p>
+                <p>Don't have account?<a target = "_blank " href=" https://accounts.google.com/lifecycle/steps/signup/name?continue=https://myaccount.google.com?utm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&ddm=0&dsh=S1459642481:1719071720778855&flowEntry=SignUp&flowName=GlifWebSignIn&TL=AC3PFD5R0E-kU-y6TzlvYhLEkWz-fGNeVPFPBKACyOU7gpB23hEqqISd0joV7Jbf"> Register</a></p>
             </div>
 
         </form>
